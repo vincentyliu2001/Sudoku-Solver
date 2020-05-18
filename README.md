@@ -12,7 +12,7 @@ from tkinter import ttk
 ### File Overview:
 Big picture overview of all the files:  
 ```grid.py```: Contains the grid and does most of the solving  
-```solver.py```: Contains the GUI and initializes the grid  
+```solver.py```: Contains the GUI and initializes the grid, main run method RUN THIS to access the solver  
 ```web.py```: Scrapes a puzzle from online  
 ### Controls:
 ```Clear```: Clears the puzzle  
