@@ -58,7 +58,6 @@ class Grid(object):
                     # we don't have to solve it
                     self.cells[r, c].flip_all(0)
                     # we flip back the number given to 1, since this has to be the value
-                    print(given[r, c])
                     self.flip(r, c, given[r, c] - 1, 1)
                     # increment the number of cells that we have solved
                     self.singular += 1
