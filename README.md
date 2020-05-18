@@ -9,7 +9,11 @@ from selenium import webdriver
 from tkinter import *
 from tkinter import ttk
 ```
-
+### File Overview:
+Big picture overview of all the files:  
+```grid.py```: Contains the grid and does most of the solving  
+```solver.py```: Contains the GUI and initializes the grid  
+```web.py```: Scrapes a puzzle from online  
 ### Controls:
 ```Clear```: Clears the puzzle  
 ```Solve```: Solves the puzzle  
