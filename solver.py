@@ -68,17 +68,20 @@ class Gui:
         given = np.empty((9, 9), dtype=int)
         for r in range(0, len(self.squares[ndx])):
             if stop:
-                break;
+                break
             for c in range(0, len(self.squares[ndx])):
                 x = self.squares[ndx][r, c].get()
-                if x == '':
+                if x != '' and not x.isnumeric():
+                    stop = True
+                    break
+                elif x == '':
                     given[r, c] = 0
                 else:
                     if 0 < int(x) < 10:
                         given[r, c] = int(x)
                     else:
                         stop = True
-                        break;
+                        break
         if stop:
             solution = None
         else:
